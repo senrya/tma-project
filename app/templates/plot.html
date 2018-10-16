@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+    <h1> This is a chart I just created! </h1>
+    <br>
+    <body>
+    <img src="data:image/png;base64, {{ plot_url }}">
+    </body>
+{% endblock %}

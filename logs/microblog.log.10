@@ -1,0 +1,113 @@
+2018-10-02 15:39:54,405 ERROR: Exception on /user/khai [GET] [in C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\engine\base.py", line 1193, in _execute_context
+    context)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\engine\default.py", line 509, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: post.timestamp
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\internship-work-TMA\microblog\app\routes.py", line 92, in user
+    page, app.config['SAYS_PER_PAGE'], False)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask_sqlalchemy\__init__.py", line 491, in paginate
+    items = self.limit(per_page).offset((page - 1) * per_page).all()
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\orm\query.py", line 2836, in all
+    return list(self)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\orm\query.py", line 2988, in __iter__
+    return self._execute_and_instances(context)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\orm\query.py", line 3011, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\engine\base.py", line 948, in execute
+    return meth(self, multiparams, params)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\sql\elements.py", line 269, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\engine\base.py", line 1060, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\engine\base.py", line 1200, in _execute_context
+    context)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\engine\base.py", line 1413, in _handle_dbapi_exception
+    exc_info
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\util\compat.py", line 265, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\util\compat.py", line 248, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\engine\base.py", line 1193, in _execute_context
+    context)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\engine\default.py", line 509, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: post.timestamp [SQL: 'SELECT say.id AS say_id, say.body AS say_body, say.timestamp AS say_timestamp, say.user_id AS say_user_id \nFROM say \nWHERE ? = say.user_id ORDER BY post.timestamp DESC\n LIMIT ? OFFSET ?'] [parameters: (2, 7, 0)] (Background on this error at: http://sqlalche.me/e/e3q8)
+2018-10-02 15:48:15,034 INFO: Microblog startup [in D:\internship-work-TMA\microblog\app\__init__.py:45]
+2018-10-02 15:48:28,712 ERROR: Exception on /user/khai [GET] [in C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\engine\base.py", line 1193, in _execute_context
+    context)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\engine\default.py", line 509, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such column: post.timestamp
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\internship-work-TMA\microblog\app\routes.py", line 92, in user
+    page, app.config['SAYS_PER_PAGE'], False)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask_sqlalchemy\__init__.py", line 491, in paginate
+    items = self.limit(per_page).offset((page - 1) * per_page).all()
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\orm\query.py", line 2836, in all
+    return list(self)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\orm\query.py", line 2988, in __iter__
+    return self._execute_and_instances(context)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\orm\query.py", line 3011, in _execute_and_instances
+    result = conn.execute(querycontext.statement, self._params)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\engine\base.py", line 948, in execute
+    return meth(self, multiparams, params)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\sql\elements.py", line 269, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\engine\base.py", line 1060, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\engine\base.py", line 1200, in _execute_context
+    context)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\engine\base.py", line 1413, in _handle_dbapi_exception
+    exc_info
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\util\compat.py", line 265, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\util\compat.py", line 248, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\engine\base.py", line 1193, in _execute_context
+    context)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\sqlalchemy\engine\default.py", line 509, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such column: post.timestamp [SQL: 'SELECT say.id AS say_id, say.body AS say_body, say.timestamp AS say_timestamp, say.user_id AS say_user_id \nFROM say \nWHERE ? = say.user_id ORDER BY post.timestamp DESC\n LIMIT ? OFFSET ?'] [parameters: (2, 7, 0)] (Background on this error at: http://sqlalche.me/e/e3q8)
+2018-10-02 15:50:14,125 INFO: Microblog startup [in D:\internship-work-TMA\microblog\app\__init__.py:45]
+2018-10-02 15:59:36,984 INFO: Microblog startup [in D:\internship-work-TMA\microblog\app\__init__.py:45]
+2018-10-04 09:57:14,885 INFO: Microblog startup [in D:\internship-work-TMA\microblog\app\__init__.py:45]
+2018-10-04 10:20:02,317 INFO: Microblog startup [in D:\internship-work-TMA\microblog\app\__init__.py:45]

@@ -1,0 +1,126 @@
+2018-10-04 10:20:10,919 ERROR: Exception on /psk8 [GET] [in C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\internship-work-TMA\microblog\app\routes.py", line 333, in psk8
+    BER = 1/k*erfc(sqrt(EbN0lin*k)*sin(pi/8));
+NameError: name 'EbN0lin' is not defined
+2018-10-04 10:20:13,110 ERROR: Exception on /psk8 [GET] [in C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\internship-work-TMA\microblog\app\routes.py", line 333, in psk8
+    BER = 1/k*erfc(sqrt(EbN0lin*k)*sin(pi/8));
+NameError: name 'EbN0lin' is not defined
+2018-10-04 10:20:56,387 INFO: Microblog startup [in D:\internship-work-TMA\microblog\app\__init__.py:45]
+2018-10-04 10:21:22,131 ERROR: Exception on /qam [GET] [in C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\internship-work-TMA\microblog\app\routes.py", line 314, in qam
+    plt.savefig(imgb, format='png')
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\matplotlib\pyplot.py", line 696, in savefig
+    fig.canvas.draw_idle()   # need this if 'transparent=True' to reset colors
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\matplotlib\backends\_backend_tk.py", line 314, in draw_idle
+    self._idle_callback = self._tkcanvas.after_idle(idle_draw)
+  File "C:\Program Files (x86)\Python37-32\lib\tkinter\__init__.py", line 761, in after_idle
+    return self.after('idle', func, *args)
+  File "C:\Program Files (x86)\Python37-32\lib\tkinter\__init__.py", line 753, in after
+    name = self._register(callit)
+  File "C:\Program Files (x86)\Python37-32\lib\tkinter\__init__.py", line 1369, in _register
+    self.tk.createcommand(name, f)
+RuntimeError: main thread is not in main loop
+2018-10-04 10:24:13,656 INFO: Microblog startup [in D:\internship-work-TMA\microblog\app\__init__.py:45]
+2018-10-04 10:26:44,070 INFO: Microblog startup [in D:\internship-work-TMA\microblog\app\__init__.py:45]
+2018-10-04 10:27:00,717 ERROR: Exception on /dpsk [GET] [in C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\internship-work-TMA\microblog\app\routes.py", line 253, in dpsk
+    plt.savefig(imga, format='png')
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\matplotlib\pyplot.py", line 696, in savefig
+    fig.canvas.draw_idle()   # need this if 'transparent=True' to reset colors
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\matplotlib\backends\_backend_tk.py", line 314, in draw_idle
+    self._idle_callback = self._tkcanvas.after_idle(idle_draw)
+  File "C:\Program Files (x86)\Python37-32\lib\tkinter\__init__.py", line 761, in after_idle
+    return self.after('idle', func, *args)
+  File "C:\Program Files (x86)\Python37-32\lib\tkinter\__init__.py", line 753, in after
+    name = self._register(callit)
+  File "C:\Program Files (x86)\Python37-32\lib\tkinter\__init__.py", line 1369, in _register
+    self.tk.createcommand(name, f)
+RuntimeError: main thread is not in main loop
+2018-10-04 10:27:35,049 INFO: Microblog startup [in D:\internship-work-TMA\microblog\app\__init__.py:45]
+2018-10-04 10:29:07,152 INFO: Microblog startup [in D:\internship-work-TMA\microblog\app\__init__.py:45]
+2018-10-04 10:30:31,466 INFO: Microblog startup [in D:\internship-work-TMA\microblog\app\__init__.py:45]
+2018-10-04 10:31:24,490 INFO: Microblog startup [in D:\internship-work-TMA\microblog\app\__init__.py:45]
+2018-10-04 10:31:43,412 ERROR: Exception on /bpsk [GET] [in C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\internship-work-TMA\microblog\app\routes.py", line 225, in bpsk
+    plt.savefig(img, format='png')
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\matplotlib\pyplot.py", line 696, in savefig
+    fig.canvas.draw_idle()   # need this if 'transparent=True' to reset colors
+  File "C:\Users\intern.hpkhai\AppData\Roaming\Python\Python37\site-packages\matplotlib\backends\_backend_tk.py", line 314, in draw_idle
+    self._idle_callback = self._tkcanvas.after_idle(idle_draw)
+  File "C:\Program Files (x86)\Python37-32\lib\tkinter\__init__.py", line 761, in after_idle
+    return self.after('idle', func, *args)
+  File "C:\Program Files (x86)\Python37-32\lib\tkinter\__init__.py", line 753, in after
+    name = self._register(callit)
+  File "C:\Program Files (x86)\Python37-32\lib\tkinter\__init__.py", line 1369, in _register
+    self.tk.createcommand(name, f)
+RuntimeError: main thread is not in main loop
+2018-10-04 10:34:23,308 INFO: Microblog startup [in D:\internship-work-TMA\microblog\app\__init__.py:45]
+2018-10-04 10:37:22,346 INFO: Microblog startup [in D:\internship-work-TMA\microblog\app\__init__.py:45]
+2018-10-04 10:39:23,511 INFO: Microblog startup [in D:\internship-work-TMA\microblog\app\__init__.py:45]
+2018-10-04 10:40:59,277 INFO: Microblog startup [in D:\internship-work-TMA\microblog\app\__init__.py:45]
